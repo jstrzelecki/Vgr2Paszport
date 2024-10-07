@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Vgr2Paszport/MainWindow.axaml" value="Vgr2Paszport/Vgr2Paszport.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
