@@ -4,6 +4,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Vgr2Paszport.MainWindow"
-        Title="Vgr2Paszport">
-    Welcome to Avalonia!
+        Title="Wprowadzenie danych do paszportu"
+        Background="#5f9ea0">
+    <Grid Margin="20">
+       <Grid.ColumnDefinitions>
+           <ColumnDefinition></ColumnDefinition>
+           <ColumnDefinition></ColumnDefinition>
+       </Grid.ColumnDefinitions>
+       <Grid>
+           <StackPanel>
+               <Grid>
+                   <Grid.ColumnDefinitions>
+                       <ColumnDefinition Width="150"></ColumnDefinition>
+                       <ColumnDefinition></ColumnDefinition>
+                   </Grid.ColumnDefinitions>
+                   <Grid.RowDefinitions>
+                       <RowDefinition></RowDefinition>
+                       <RowDefinition></RowDefinition>
+                       <RowDefinition></RowDefinition>
+                   </Grid.RowDefinitions>
+                   <TextBlock Text="Numer" VerticalAlignment="Center"></TextBlock>
+                   <TextBlock Grid.Row="1" Text="Imię" VerticalAlignment="Center"></TextBlock>
+                   <TextBlock Grid.Row="2" Text="Nazwisko" VerticalAlignment="Center"></TextBlock>
+                   <TextBox Grid.Column="1" Margin="10" Background="#F0FFFF"></TextBox>
+                   <TextBox Grid.Column="1" Grid.Row="1" Margin="10" Background="#F0FFFF"></TextBox>
+                   <TextBox Grid.Column="1" Grid.Row="2" Margin="10" Background="#F0FFFF"></TextBox>
+               </Grid>
+               <Border BorderBrush="#F0FFFF" BorderThickness="4" CornerRadius="5" Padding="20" Margin="0, 40">
+                   <StackPanel>
+                       <TextBlock Text="Kolor oczu" Margin="0,-30" Background="#5f9ea0" Width="70" HorizontalAlignment="Left"></TextBlock>
+                       <RadioButton Content="niebieskie" ></RadioButton>
+                       <RadioButton Content="zielone"></RadioButton>
+                       <RadioButton Content="piwne"></RadioButton>
+                   </StackPanel>
+               </Border>
+           </StackPanel>
+       </Grid>
+        
+           <StackPanel Orientation="Vertical" Grid.Column="1">
+               <StackPanel Orientation="Horizontal">
+                   <Image Source="Assets/000-zdjecie.jpg" Margin="20" Stretch="Uniform" Width="150"></Image>
+                   <Image Source="Assets/000-odciski.jpg" Margin="20" Stretch="Uniform" Width="150"></Image>
+               </StackPanel>
+               <Button Content="OK" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="200" Background="#F0FFFF"></Button>
+           </StackPanel>
+   </Grid>
 </Window>

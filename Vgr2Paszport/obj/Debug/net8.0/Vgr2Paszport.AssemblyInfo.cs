@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vgr2Paszport")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41e193041e8a398cecc27d82e13796b2ddfbd4ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vgr2Paszport")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vgr2Paszport")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

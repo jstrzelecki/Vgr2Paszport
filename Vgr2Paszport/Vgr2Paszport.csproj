@@ -16,4 +16,27 @@
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.1.0"/>
     </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\000-odciski.jpg" />
+      <AvaloniaResource Include="Assets\000-odciski.jpg" />
+      <None Remove="Assets\000-zdjecie.jpg" />
+      <AvaloniaResource Include="Assets\000-zdjecie.jpg" />
+      <None Remove="Assets\111-odciski.jpg" />
+      <AvaloniaResource Include="Assets\111-odciski.jpg" />
+      <None Remove="Assets\111-zdjecie.jpg" />
+      <AvaloniaResource Include="Assets\111-zdjecie.jpg" />
+      <None Remove="Assets\222-odciski.jpg" />
+      <AvaloniaResource Include="Assets\222-odciski.jpg" />
+      <None Remove="Assets\222-zdjecie.jpg" />
+      <AvaloniaResource Include="Assets\222-zdjecie.jpg" />
+      <None Remove="Assets\333-odciski.jpg" />
+      <AvaloniaResource Include="Assets\333-odciski.jpg" />
+      <None Remove="Assets\333-zdjecie.jpg" />
+      <AvaloniaResource Include="Assets\333-zdjecie.jpg" />
+      <None Remove="Assets\brak-odciski.jpg" />
+      <AvaloniaResource Include="Assets\brak-odciski.jpg" />
+      <None Remove="Assets\brak-zdjecie.jpg" />
+      <AvaloniaResource Include="Assets\brak-zdjecie.jpg" />
+    </ItemGroup>
 </Project>
