@@ -4,6 +4,7 @@
     <option name="projectPerEditor">
       <map>
         <entry key="Vgr2Paszport/MainWindow.axaml" value="Vgr2Paszport/Vgr2Paszport.csproj" />
+        <entry key="Vgr2Paszport/PopUpWindow.axaml" value="Vgr2Paszport/Vgr2Paszport.csproj" />
       </map>
     </option>
   </component>

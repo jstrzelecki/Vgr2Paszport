@@ -26,16 +26,16 @@
                    <TextBlock Text="Numer" VerticalAlignment="Center"></TextBlock>
                    <TextBlock Grid.Row="1" Text="Imię" VerticalAlignment="Center"></TextBlock>
                    <TextBlock Grid.Row="2" Text="Nazwisko" VerticalAlignment="Center"></TextBlock>
-                   <TextBox Grid.Column="1" Margin="10" Background="#F0FFFF"></TextBox>
-                   <TextBox Grid.Column="1" Grid.Row="1" Margin="10" Background="#F0FFFF"></TextBox>
-                   <TextBox Grid.Column="1" Grid.Row="2" Margin="10" Background="#F0FFFF"></TextBox>
+                   <TextBox Grid.Column="1" Margin="10" Background="#F0FFFF" x:Name="Numer" LostFocus="Numer_OnLostFocus"></TextBox>
+                   <TextBox Grid.Column="1" Grid.Row="1" Margin="10" Background="#F0FFFF" x:Name="Imie"></TextBox>
+                   <TextBox Grid.Column="1" Grid.Row="2" Margin="10" Background="#F0FFFF" x:Name="Nazwisko"></TextBox>
                </Grid>
                <Border BorderBrush="#F0FFFF" BorderThickness="4" CornerRadius="5" Padding="20" Margin="0, 40">
                    <StackPanel>
                        <TextBlock Text="Kolor oczu" Margin="0,-30" Background="#5f9ea0" Width="70" HorizontalAlignment="Left"></TextBlock>
-                       <RadioButton Content="niebieskie" ></RadioButton>
-                       <RadioButton Content="zielone"></RadioButton>
-                       <RadioButton Content="piwne"></RadioButton>
+                       <RadioButton Content="niebieskie" x:Name="Niebieskie"></RadioButton>
+                       <RadioButton Content="zielone" x:Name="Zielone"></RadioButton>
+                       <RadioButton Content="piwne" x:Name="Piwne"></RadioButton>
                    </StackPanel>
                </Border>
            </StackPanel>
@@ -43,10 +43,10 @@
         
            <StackPanel Orientation="Vertical" Grid.Column="1">
                <StackPanel Orientation="Horizontal">
-                   <Image Source="Assets/000-zdjecie.jpg" Margin="20" Stretch="Uniform" Width="150"></Image>
-                   <Image Source="Assets/000-odciski.jpg" Margin="20" Stretch="Uniform" Width="150"></Image>
+                   <Image Source="Assets/brak-zdjecie.jpg" Margin="20" Stretch="Uniform" Width="150" x:Name="Photo1"></Image>
+                   <Image Source="Assets/brak-odciski.jpg" Margin="20" Stretch="Uniform" Width="150" x:Name="Fingerprints"></Image>
                </StackPanel>
-               <Button Content="OK" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="200" Background="#F0FFFF"></Button>
+               <Button Content="OK" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Width="200" Background="#F0FFFF" Click="Button_OnClick"></Button>
            </StackPanel>
    </Grid>
 </Window>
